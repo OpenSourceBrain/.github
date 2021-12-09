@@ -19,13 +19,13 @@ allrefs['Thalamocortical'] = 'Traub et al. (2005)'
 
 
 
-allrefs['MF-GC-network-backprop-public'] = 'Cayco-Gajic et al. (2017)'
+allrefs['SilverLabUCL/MF-GC-network-backprop-public'] = 'Cayco-Gajic et al. (2017)'
 allrefs['GranCellLayer'] = 'Maex and De Schutter (1998)'
 allrefs['SolinasEtAl-GolgiCell'] = 'Solinas et al. (2007)'
 allrefs['VervaekeEtAl-GolgiCellNetwork'] = 'Vervaeke et al. (2010)'
 
 
-allrefs['ca1'] = 'Bezaire et al. (2016)'
+allrefs['mbezaire/ca1'] = 'Bezaire et al. (2016)'
 allrefs['FergusonEtAl2013-PVFastFiringCell'] = 'Ferguson et al. (2013)'
 allrefs['CA1PyramidalCell'] = 'Migliore et al. (2005)'
 allrefs['PinskyRinzelModel'] = 'Pinsky and Rinzel (1994)'
@@ -35,9 +35,9 @@ allrefs['WangBuzsaki1996'] = 'Wang and Buzsaki (1996)'
 allrefs['MiglioreEtAl14_OlfactoryBulb3D'] = 'Migliore et al. (2014)'
 
 
-allrefs['muscle_model'] = 'Boyle and Cohen (2008)'
+allrefs['openworm/muscle_model'] = 'Boyle and Cohen (2008)'
 allrefs['FitzHugh-Nagumo'] = 'FitzHugh (1961)'
-allrefs['hodgkin_huxley_tutorial'] = 'Hodgkin and Huxley (1952)'
+allrefs['openworm/hodgkin_huxley_tutorial'] = 'Hodgkin and Huxley (1952)'
 allrefs['PyloricNetwork'] = 'Prinz et al. (2004)'
 
 

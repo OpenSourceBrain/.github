@@ -18,10 +18,12 @@ for directory in allrefs.keys():
 
     print("Looking at: %s in %s"%(ref, directory))
 
+    gh = 'OpenSourceBrain/%s'%directory if not '/' in directory else directory
 
-    info += ' | <a href="https://github.com/OpenSourceBrain/%s">%s</a> |'%(directory,ref)
+    info += ' | <a href="https://github.com/%s">%s</a> |'%(gh,ref)
 
-    info += '  [![OMV](https://github.com/OpenSourceBrain/%s/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/OpenSourceBrain/%s/actions/workflows/omv-ci.yml) | \n'%(directory,directory)
+    info += '  [![OMV](https://github.com/%s/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/%s/actions/workflows/omv-ci.yml) '%(gh,gh)
+    info += '  [![ ](https://github.com/%s/actions/workflows/non-omv.yml/badge.svg)](https://github.com/%s/actions/workflows/non-omv.yml) | \n'%(gh,gh)
 
 
     count+=1
