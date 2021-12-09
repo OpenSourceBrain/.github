@@ -11,17 +11,18 @@ YES = ' \\ding{51} '
 
 count = 0
 
-info += '  <table>\n'
+info += '  | Model | Tests |\n'
+info += '  |----------|:------:|\n'
 for directory in allrefs.keys():
     ref = allrefs[directory]
 
     print("Looking at: %s in %s"%(ref, directory))
 
 
-    info += ' <tr><td> <a href="https://github.com/OpenSourceBrain/%s">%s</a> </td>\n'%(directory,ref)
+    info += ' | <a href="https://github.com/OpenSourceBrain/%s">%s</a> |'%(directory,ref)
 
-    info += ' <td> [![OMV](https://github.com/OpenSourceBrain/%s/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/OpenSourceBrain/%s/actions/workflows/omv-ci.yml) </td>\n\n'%(directory,directory)
-    info += ' <td> ![OMV](https://github.com/OpenSourceBrain/%s/actions/workflows/omv-ci.yml/badge.svg)  </td></tr>\n\n'%(directory)
+    info += '  [![OMV](https://github.com/OpenSourceBrain/%s/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/OpenSourceBrain/%s/actions/workflows/omv-ci.yml) | \n'%(directory,directory)
+
 
     count+=1
 
