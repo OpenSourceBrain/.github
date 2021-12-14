@@ -98,10 +98,7 @@ allrefs['VogelsEtAl2011'] = 'VogelsEtAl2011'
 allrefs['WeilerEtAl08-LaminarCortex'] = 'WeilerEtAl08-LaminarCortex'
 allrefs['MultiscaleISN'] = 'MultiscaleISN'
 allrefs['HNN'] = 'HNN'
-allrefs['XX'] = 'XX'
-allrefs['XX'] = 'XX'
-allrefs['XX'] = 'XX'
-allrefs['XX'] = 'XX'
+
 
 
 
@@ -117,15 +114,7 @@ allrefs['ONNXShowcase'] = 'ONNXShowcase'
 allrefs['CSAShowcase'] = 'CSAShowcase'
 allrefs['neuroConstructShowcase'] = 'neuroConstructShowcase'
 allrefs['ghk-nernst'] = 'ghk-nernst'
-allrefs['XX'] = 'XX'
-allrefs['XX'] = 'XX'
-allrefs['XX'] = 'XX'
-allrefs['XX'] = 'XX'
-allrefs['XX'] = 'XX'
-allrefs['XX'] = 'XX'
-allrefs['XX'] = 'XX'
-allrefs['XX'] = 'XX'
-allrefs['XX'] = 'XX'
+
 
 
 

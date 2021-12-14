@@ -11,8 +11,8 @@ YES = ' \\ding{51} '
 
 count = 0
 
-info += '  | Model | Tests |\n'
-info += '  |----------|:------:|\n'
+info += '  | Model | Tests | Pull requests |\n'
+info += '  |----------|:------:|:------:|\n'
 for directory in allrefs.keys():
     ref = allrefs[directory]
 
@@ -22,9 +22,12 @@ for directory in allrefs.keys():
 
     info += ' | <a href="https://github.com/%s">%s</a> |'%(gh,ref)
 
-    info += '  [![OMV](https://github.com/%s/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/%s/actions/workflows/omv-ci.yml) '%(gh,gh)
-    info += '  [![ ](https://github.com/%s/actions/workflows/non-omv.yml/badge.svg)](https://github.com/%s/actions/workflows/non-omv.yml) | \n'%(gh,gh)
+    info += ' |' if '--' in directory else \
+            '  [![OMV](https://github.com/%s/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/%s/actions/workflows/omv-ci.yml) '%(gh,gh) \
+            + '  [![ ](https://github.com/%s/actions/workflows/non-omv.yml/badge.svg)](https://github.com/%s/actions/workflows/non-omv.yml) | '%(gh,gh)
 
+    info += ' |\n' if '--' in directory else \
+            '  [![GitHub pull requests](https://img.shields.io/github/issues-pr/%s)](https://github.com/%s/pulls) | \n'%(gh,gh)
 
     count+=1
 
