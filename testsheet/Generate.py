@@ -9,7 +9,7 @@ info = """
 YES = ' \\multicolumn{1}{c}{Yes} '
 YES = ' \\ding{51} '
 
-categories = ['Neocortex', 'Cerebellum']
+categories = ['Neocortex', 'Cerebellum', 'Showcases']
 
 
 for category in categories:

@@ -15,6 +15,7 @@ allrefs['BlueBrainProjectShowcase'] = {'category':'Neocortex','name':'Markram et
 allrefs['PospischilEtAl2008'] = {'category':'Neocortex','name':'Pospischil et al. (2008)','desc':'HH based model for different classes of cor- tical and thalamic neurons'}
 
 allrefs['PotjansDiesmann2014'] = 'Potjans and Diesmann (2014)'
+
 allrefs['M1NetworkModel'] = 'Dura-Bernal et al. (2017)'
 allrefs['SadehEtAl2017-InhibitionStabilizedNetworks'] = 'Sadeh et al. (2017)'
 allrefs['SmithEtAl2013-L23DendriticSpikes'] = 'Smith et al. (2013)'
@@ -57,11 +58,14 @@ allrefs['MorrisLecarModel'] = 'MorrisLecarModel'
 
 allrefs['--------------------------'] = '--------------------------'
 
-allrefs['MouseLightShowcase'] = 'Janelia MouseLight'
-allrefs['NESTShowcase'] = 'NESTShowcase'
-allrefs['PyNNShowcase'] = 'PyNNShowcase'
-allrefs['NetPyNEShowcase'] = 'NetPyNEShowcase'
-allrefs['SBMLShowcase'] = 'SBMLShowcase'
+
+allrefs['MouseLightShowcase'] = {'category':'Showcases','name':'Janelia MouseLight', 'desc':'Janelia MouseLight project neuronal reconstructions'}
+allrefs['NESTShowcase'] = {'category':'Showcases','name':'NESTShowcase', 'desc':'Examples of interactions with simulator NEST'}
+allrefs['PyNNShowcase'] = {'category':'Showcases','name':'PyNNShowcase', 'desc':'Examples of interactions between PyNN and NeuroML'}
+allrefs['NetPyNEShowcase'] = {'category':'Showcases','name':'NetPyNEShowcase', 'desc':'Examples of interactions between NeuroML and NetPyNE'}
+allrefs['SBMLShowcase'] = {'category':'Showcases','name':'SBMLShowcase', 'desc':'Examples of interactions between NeuroML and SBML'}
+
+
 allrefs['BrianShowcase'] = 'BrianShowcase'
 allrefs['MOOSEShowcase'] = 'MOOSEShowcase'
 allrefs['ArborShowcase'] = 'ArborShowcase'
