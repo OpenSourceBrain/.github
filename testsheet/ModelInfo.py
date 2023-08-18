@@ -3,16 +3,19 @@ import collections
 
 allrefs = collections.OrderedDict()
 
+workflows = {}
+
 '''
 {'category':'Neocortex','name':'XXX', desc:''}
 '''
 
 allrefs['AllenInstituteNeuroML'] = {'category':'Neocortex','name':'Allen Institute Cell Types DB (Hawrylycz et al. 2016)', 'desc':'Morphologically detailed and point neuron models based on electrophysiological recordings from visual cortex neurons'}
 allrefs['Brunel2000'] = {'category':'Neocortex','name':'Brunel (2000)', 'desc':'Spiking network illustrating balance between excitation and inhibition'}
+workflows['Brunel2000'] = ['omv-ci.yml','non-omv.yml']
 allrefs['L5bPyrCellHayEtAl2011'] = {'category':'Neocortex','name':'Hay et al. (2011)','desc':'Layer 5 pyramidal cell model constrained by somatic and dendritic recordings'}
 allrefs['IzhikevichModel'] = {'category':'Neocortex','name':'Izhikevich (2003)','desc':'Spiking neuron model reproducing wide range of neuronal activity'}
 allrefs['BlueBrainProjectShowcase'] = {'category':'Neocortex','name':'Markram et al. (2015)','desc':'Cell models from Neocortical Microcircuit of Blue Brain Project'}
-allrefs['PospischilEtAl2008'] = {'category':'Neocortex','name':'Pospischil et al. (2008)','desc':'HH based model for different classes of cor- tical and thalamic neurons'}
+allrefs['PospischilEtAl2008'] = {'category':'Neocortex','name':'Pospischil et al. (2008)','desc':'HH based model for different classes of cortical and thalamic neurons'}
 
 allrefs['PotjansDiesmann2014'] = 'Potjans and Diesmann (2014)'
 
@@ -60,18 +63,24 @@ allrefs['--------------------------'] = '--------------------------'
 
 
 allrefs['MouseLightShowcase'] = {'category':'Showcases','name':'Janelia MouseLight', 'desc':'Janelia MouseLight project neuronal reconstructions'}
-allrefs['NESTShowcase'] = {'category':'Showcases','name':'NESTShowcase', 'desc':'Examples of interactions with simulator NEST'}
-allrefs['PyNNShowcase'] = {'category':'Showcases','name':'PyNNShowcase', 'desc':'Examples of interactions between PyNN and NeuroML'}
-allrefs['NetPyNEShowcase'] = {'category':'Showcases','name':'NetPyNEShowcase', 'desc':'Examples of interactions between NeuroML and NetPyNE'}
-allrefs['SBMLShowcase'] = {'category':'Showcases','name':'SBMLShowcase', 'desc':'Examples of interactions between NeuroML and SBML'}
+allrefs['NESTShowcase'] = {'category':'Showcases','name':'NEST Showcase', 'desc':'Examples of interactions with simulator NEST'}
+allrefs['PyNNShowcase'] = {'category':'Showcases','name':'PyNN Showcase', 'desc':'Examples of interactions between PyNN and NeuroML'}
+allrefs['NetPyNEShowcase'] = {'category':'Showcases','name':'NetPyNE Showcase', 'desc':'Examples of interactions between NeuroML and NetPyNE'}
+allrefs['SBMLShowcase'] = {'category':'Showcases','name':'SBML Showcase', 'desc':'Examples of interactions between NeuroML and SBML'}
+
+allrefs['BrianShowcase'] = {'category':'Showcases','name':'Brian Showcase', 'desc':'Examples of interactions between NeuroML and Brian'}
+allrefs['MOOSEShowcase'] = {'category':'Showcases','name':'MOOSE Showcase', 'desc':'Examples of interactions between NeuroML and MOOSE'}
+allrefs['ArborShowcase'] = {'category':'Showcases','name':'Arbor Showcase', 'desc':'Examples of interactions between NeuroML and Arbor'}
+allrefs['EDENShowcase'] = {'category':'Showcases','name':'EDEN Showcase', 'desc':'Examples of interactions between NeuroML and EDEN'}
+
+allrefs['XXX'] = {'category':'Showcases','name':'XXXX', 'desc':'Examples of interactions between NeuroML and XXX'}
+allrefs['XXX'] = {'category':'Showcases','name':'XXXX', 'desc':'Examples of interactions between NeuroML and XXX'}
 
 
-allrefs['BrianShowcase'] = 'BrianShowcase'
-allrefs['MOOSEShowcase'] = 'MOOSEShowcase'
-allrefs['ArborShowcase'] = 'ArborShowcase'
-allrefs['EDENShowcase'] = 'EDENShowcase'
 allrefs['BindsNETShowcase'] = 'BindsNETShowcase'
 allrefs['NWBShowcase'] = 'NWBShowcase'
+workflows['NWBShowcase'] = ['ci.yml']
+
 allrefs['ConnectivityShowcase'] = 'ConnectivityShowcase'
 allrefs['TheVirtualBrainShowcase'] = 'TheVirtualBrainShowcase'
 allrefs['PsyNeuLinkShowcase'] = 'PsyNeuLinkShowcase'

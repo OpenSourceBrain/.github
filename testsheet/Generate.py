@@ -1,5 +1,5 @@
 
-from ModelInfo import allrefs
+from ModelInfo import allrefs, workflows
 import os
 
 info = """
@@ -40,9 +40,17 @@ for category in categories:
 
             info += ' | <a href="https://github.com/%s">%s</a><br/><i><sup>%s</sup></i> |'%(gh,name, desc)
 
-            info += ' |' if '--' in directory else \
-                    '  [![OMV](https://github.com/%s/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/%s/actions/workflows/omv-ci.yml) '%(gh,gh) \
-                    + '  [![ ](https://github.com/%s/actions/workflows/non-omv.yml/badge.svg)](https://github.com/%s/actions/workflows/non-omv.yml) | '%(gh,gh)
+            if directory in workflows:
+
+                for wf in workflows[directory]:
+                    info += '  [![%s](https://github.com/%s/actions/workflows/%s/badge.svg)](https://github.com/%s/actions/workflows/%s) '%(wf,gh,wf,gh,wf)
+
+                info += ' |' 
+
+            else:
+                info += ' |' if '--' in directory else \
+                        '  [![OMV](https://github.com/%s/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/%s/actions/workflows/omv-ci.yml) '%(gh,gh) \
+                        + '  [![ ](https://github.com/%s/actions/workflows/non-omv.yml/badge.svg)](https://github.com/%s/actions/workflows/non-omv.yml) | '%(gh,gh)
 
             info += ' |\n' if '--' in directory else \
                     '  [![GitHub pull requests](https://img.shields.io/github/issues-pr/%s)](https://github.com/%s/pulls) | \n'%(gh,gh)
@@ -70,9 +78,16 @@ for directory in allrefs.keys():
 
         info += ' | <a href="https://github.com/%s">%s</a> |'%(gh,ref)
 
-        info += ' |' if '--' in directory else \
-                '  [![OMV](https://github.com/%s/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/%s/actions/workflows/omv-ci.yml) '%(gh,gh) \
-                + '  [![ ](https://github.com/%s/actions/workflows/non-omv.yml/badge.svg)](https://github.com/%s/actions/workflows/non-omv.yml) | '%(gh,gh)
+        if directory in workflows:
+
+                for wf in workflows[directory]:
+                    info += '  [![%s](https://github.com/%s/actions/workflows/%s/badge.svg)](https://github.com/%s/actions/workflows/%s) '%(wf,gh,wf,gh,wf)
+
+                info += ' |' 
+        else:
+            info += ' |' if '--' in directory else \
+                    '  [![OMV](https://github.com/%s/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/%s/actions/workflows/omv-ci.yml) '%(gh,gh) \
+                    + '  [![ ](https://github.com/%s/actions/workflows/non-omv.yml/badge.svg)](https://github.com/%s/actions/workflows/non-omv.yml) | '%(gh,gh)
 
         info += ' |\n' if '--' in directory else \
                 '  [![GitHub pull requests](https://img.shields.io/github/issues-pr/%s)](https://github.com/%s/pulls) | \n'%(gh,gh)
