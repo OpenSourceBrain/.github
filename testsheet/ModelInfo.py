@@ -3,10 +3,15 @@ import collections
 
 allrefs = collections.OrderedDict()
 
+'''
+{'category':'Neocortex','name':'XXX'}
+'''
 
-allrefs['AllenInstituteNeuroML'] = 'Allen Institute Cell Types DB (Hawrylycz et al. (2016)'
-allrefs['Brunel2000'] = 'Brunel (2000)'
-allrefs['L5bPyrCellHayEtAl2011'] = 'Hay et al. (2011)'
+allrefs['AllenInstituteNeuroML'] = {'category':'Neocortex','name':'Allen Institute Cell Types DB (Hawrylycz et al. 2016)'}
+allrefs['Brunel2000'] = {'category':'Neocortex','name':'Brunel (2000)'}
+
+allrefs['L5bPyrCellHayEtAl2011'] = {'category':'Neocortex','name':'Hay et al. (2011)'}
+
 allrefs['IzhikevichModel'] = 'Izhikevich (2003)'
 allrefs['BlueBrainProjectShowcase'] = 'Markram et al. (2015)'
 allrefs['PospischilEtAl2008'] = 'Pospischil et al. (2008)'
@@ -24,8 +29,9 @@ allrefs['DemirtasEtAl19'] = 'DemirtasEtAl19'
 
 
 
+allrefs['GranCellLayer'] = {'category':'Cerebellum','name':'Maex and De Schutter (1998)'}
+
 allrefs['SilverLabUCL/MF-GC-network-backprop-public'] = 'Cayco-Gajic et al. (2017)'
-allrefs['GranCellLayer'] = 'Maex and De Schutter (1998)'
 allrefs['GranuleCell'] = 'Maex and De Schutter (1998) GrC'
 allrefs['SolinasEtAl-GolgiCell'] = 'Solinas et al. (2007)'
 allrefs['VervaekeEtAl-GolgiCellNetwork'] = 'Vervaeke et al. (2010)'
