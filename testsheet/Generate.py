@@ -34,11 +34,11 @@ for category in categories:
             print("Looking at: %s in %s"%(allinfo, directory))
 
             name = allinfo['name']
-            #ref = allinfo['ref']
+            desc = allinfo['desc']
 
             gh = 'OpenSourceBrain/%s'%directory if not '/' in directory else directory
 
-            info += ' | <a href="https://github.com/%s">%s</a> |'%(gh,name)
+            info += ' | <a href="https://github.com/%s">%s</a><br/><i><sup>%s</sup></i> |'%(gh,name, desc)
 
             info += ' |' if '--' in directory else \
                     '  [![OMV](https://github.com/%s/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/%s/actions/workflows/omv-ci.yml) '%(gh,gh) \

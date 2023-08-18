@@ -4,17 +4,16 @@ import collections
 allrefs = collections.OrderedDict()
 
 '''
-{'category':'Neocortex','name':'XXX'}
+{'category':'Neocortex','name':'XXX', desc:''}
 '''
 
-allrefs['AllenInstituteNeuroML'] = {'category':'Neocortex','name':'Allen Institute Cell Types DB (Hawrylycz et al. 2016)'}
-allrefs['Brunel2000'] = {'category':'Neocortex','name':'Brunel (2000)'}
+allrefs['AllenInstituteNeuroML'] = {'category':'Neocortex','name':'Allen Institute Cell Types DB (Hawrylycz et al. 2016)', 'desc':'Morphologically detailed and point neuron models based on electrophysiological recordings from visual cortex neurons'}
+allrefs['Brunel2000'] = {'category':'Neocortex','name':'Brunel (2000)', 'desc':'Spiking network illustrating balance between excitation and inhibition'}
+allrefs['L5bPyrCellHayEtAl2011'] = {'category':'Neocortex','name':'Hay et al. (2011)','desc':'Layer 5 pyramidal cell model constrained by somatic and dendritic recordings'}
+allrefs['IzhikevichModel'] = {'category':'Neocortex','name':'Izhikevich (2003)','desc':'Spiking neuron model reproducing wide range of neuronal activity'}
+allrefs['BlueBrainProjectShowcase'] = {'category':'Neocortex','name':'Markram et al. (2015)','desc':'Cell models from Neocortical Microcircuit of Blue Brain Project'}
+allrefs['PospischilEtAl2008'] = {'category':'Neocortex','name':'Pospischil et al. (2008)','desc':'HH based model for different classes of cor- tical and thalamic neurons'}
 
-allrefs['L5bPyrCellHayEtAl2011'] = {'category':'Neocortex','name':'Hay et al. (2011)'}
-
-allrefs['IzhikevichModel'] = 'Izhikevich (2003)'
-allrefs['BlueBrainProjectShowcase'] = 'Markram et al. (2015)'
-allrefs['PospischilEtAl2008'] = 'Pospischil et al. (2008)'
 allrefs['PotjansDiesmann2014'] = 'Potjans and Diesmann (2014)'
 allrefs['M1NetworkModel'] = 'Dura-Bernal et al. (2017)'
 allrefs['SadehEtAl2017-InhibitionStabilizedNetworks'] = 'Sadeh et al. (2017)'
@@ -29,7 +28,7 @@ allrefs['DemirtasEtAl19'] = 'DemirtasEtAl19'
 
 
 
-allrefs['GranCellLayer'] = {'category':'Cerebellum','name':'Maex and De Schutter (1998)'}
+allrefs['GranCellLayer'] = {'category':'Cerebellum','name':'Maex and De Schutter (1998)', 'desc':'Cerebellar granule cell layer network'}
 
 allrefs['SilverLabUCL/MF-GC-network-backprop-public'] = 'Cayco-Gajic et al. (2017)'
 allrefs['GranuleCell'] = 'Maex and De Schutter (1998) GrC'
