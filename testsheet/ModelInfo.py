@@ -1,17 +1,13 @@
 import collections
 
-
 allrefs = collections.OrderedDict()
 
 workflows = {}
 
-'''
-{'category':'Neocortex','name':'XXX', desc:''}
-'''
 
 allrefs['AllenInstituteNeuroML'] = {'category':'Neocortex','name':'Allen Institute Cell Types DB (Hawrylycz et al. 2016)', 'desc':'Morphologically detailed and point neuron models based on electrophysiological recordings from visual cortex neurons'}
 allrefs['Brunel2000'] = {'category':'Neocortex','name':'Brunel (2000)', 'desc':'Spiking network illustrating balance between excitation and inhibition'}
-workflows['Brunel2000'] = ['omv-ci.yml','non-omv.yml']
+workflows['Brunel2000'] = ['omv-ci.yml','non-omv.yml'] # to test...
 allrefs['L5bPyrCellHayEtAl2011'] = {'category':'Neocortex','name':'Hay et al. (2011)','desc':'Layer 5 pyramidal cell model constrained by somatic and dendritic recordings'}
 allrefs['IzhikevichModel'] = {'category':'Neocortex','name':'Izhikevich (2003)','desc':'Spiking neuron model reproducing wide range of neuronal activity'}
 allrefs['BlueBrainProjectShowcase'] = {'category':'Neocortex','name':'Markram et al. (2015)','desc':'Cell models from Neocortical Microcircuit of Blue Brain Project'}
@@ -73,18 +69,22 @@ allrefs['MOOSEShowcase'] = {'category':'Showcases','name':'MOOSE Showcase', 'des
 allrefs['ArborShowcase'] = {'category':'Showcases','name':'Arbor Showcase', 'desc':'Examples of interactions between NeuroML and Arbor'}
 allrefs['EDENShowcase'] = {'category':'Showcases','name':'EDEN Showcase', 'desc':'Examples of interactions between NeuroML and EDEN'}
 
-allrefs['XXX'] = {'category':'Showcases','name':'XXXX', 'desc':'Examples of interactions between NeuroML and XXX'}
-allrefs['XXX'] = {'category':'Showcases','name':'XXXX', 'desc':'Examples of interactions between NeuroML and XXX'}
+allrefs['TheVirtualBrainShowcase'] = {'category':'Showcases','name':'The Virtual Brain Showcase', 'desc':'Examples of interactions between NeuroML and TVB'}
+allrefs['NEURONShowcase'] = {'category':'Showcases','name':'NEURON Showcase', 'desc':'Examples of interactions between NeuroML and NEURON'}
 
+allrefs['neuroConstructShowcase'] = {'category':'Showcases','name':'neuroConstructShowcase', 'desc':'Examples of neuroConstruct projects'}
 
-allrefs['BindsNETShowcase'] = 'BindsNETShowcase'
-allrefs['NWBShowcase'] = 'NWBShowcase'
+allrefs['BindsNETShowcase'] = 'BindsNETShowcase'   # No example code yet...
+allrefs['PsyNeuLinkShowcase'] = 'PsyNeuLinkShowcase'   # All working examples moved to MDF repo...
+allrefs['NWBShowcase'] = 'NWBShowcase'     # No NeuroML in here...
 workflows['NWBShowcase'] = ['ci.yml']
+allrefs['ConnectivityShowcase'] = 'ConnectivityShowcase'  # No real simulator there...
 
-allrefs['ConnectivityShowcase'] = 'ConnectivityShowcase'
-allrefs['TheVirtualBrainShowcase'] = 'TheVirtualBrainShowcase'
-allrefs['PsyNeuLinkShowcase'] = 'PsyNeuLinkShowcase'
-allrefs['NEURONShowcase'] = 'NEURONShowcase'
+# allrefs['ONNXShowcase'] = 'ONNXShowcase'  # All working examples moved to MDF repo...
+
+# allrefs['CSAShowcase'] = 'CSAShowcase'  # No longer maintained...
+
+allrefs['ghk-nernst'] = 'ghk-nernst'
 
 allrefs['-------------------------'] = '--------------------------'
 
@@ -111,7 +111,6 @@ allrefs['L23PyramidalCellTutorial'] = 'L23PyramidalCellTutorial'
 allrefs['EbnerEtAl2019'] = 'EbnerEtAl2019'
 allrefs['BahlEtAl2012_ReducedL5PyrCell'] = 'BahlEtAl2012_ReducedL5PyrCell'
 allrefs['V1NetworkModels'] = 'V1NetworkModels'
-allrefs['VERTEXShowcase'] = 'VERTEXShowcase'
 allrefs['VogelsEtAl2011'] = 'VogelsEtAl2011'
 allrefs['WeilerEtAl08-LaminarCortex'] = 'WeilerEtAl08-LaminarCortex'
 allrefs['MultiscaleISN'] = 'MultiscaleISN'
@@ -120,74 +119,15 @@ allrefs['HNN'] = 'HNN'
 
 
 
+allrefs['VERTEXShowcase'] = 'VERTEXShowcase'
 allrefs['NSGPortalShowcase'] = 'NSGPortalShowcase'
+
 allrefs['NeuroElectroSciUnit'] = 'NeuroElectroSciUnit'
 allrefs['NengoNeuroML'] = 'NengoNeuroML'
 allrefs['StochasticityShowcase'] = 'StochasticityShowcase'
 allrefs['SynapticIntegration'] = 'SynapticIntegration'
 allrefs['SinusoidalVoltageProtocols'] = 'SinusoidalVoltageProtocols'
-allrefs['ONNXShowcase'] = 'ONNXShowcase'
-
-
-allrefs['CSAShowcase'] = 'CSAShowcase'
-allrefs['neuroConstructShowcase'] = 'neuroConstructShowcase'
-allrefs['ghk-nernst'] = 'ghk-nernst'
-
 
 
 
 ###########allrefs['korngreen-pyramidal'] = 'Almog and Korngreen, 2014'
-
-all_cells = collections.OrderedDict()
-
-
-
-#all_cells['Traub_DeepAxAx'] = './coreprojects/Thalamocortical/neuroConstruct/generatedNeuroML2/DeepAxAx.cell.nml'
-
-all_cells['L23_Smith'] = './coreprojects/SmithEtAl2013-L23DendriticSpikes/NeuroML2/L23_NoHotSpot.cell.nml', 'Smith et al. (2013<br/OLM cell', '#F3F3F3', '35degC', [-0.1, -0.05, 0, 0.25, 0.4]
-
-all_cells['Pospi_LTS'] = './coreprojects/PospischilEtAl2008/NeuroML2/cells/LTS/LTS.cell.nml','Pospischil et al. (2008<br/>Low Threshold Spiking cell', '#F3F3F3', '36degC', [-0.025, -0.0125, 0, 0.05, 0.2]
-
-all_cells['SolinasEtAl-GolgiCell'] = './coreprojects/SolinasEtAl-GolgiCell/NeuroML2/Golgi.cell.nml','Solinas et al. 2007<br/>Cerebellar Golgi Cell', '#FFB380', '23degC', [-0.025, -0.0125, 0, 0.03, 0.05]
-
-all_cells['ca1'] = 'coreprojects/ca1/NeuroML2/cells/olm.cell.nml', 'Bezaire et al. 2016<br/>OLM interneuron', '#FFE680', '34degC', [-0.1, -0.05, 0, 0.05, 0.1]
-
-# High rheobase: 700 pA...
-#all_cells['mitral'] = 'coreprojects/MiglioreEtAl14_OlfactoryBulb3D/NeuroML2/MitralCells/Exported/Mitral_0_0.cell.nml', 'Migliore et al. 2005<br/>Mitral cell', '#C6E4E4', '35degC', [-0.1, -0.05, 0, 0.25, 0.5]
-
-all_cells['HH'] = './coreprojects/hodgkin_huxley_tutorial/Tutorial/Source/hhcell.cell.nml', 'Hodgkin and Huxley, 1952<br/>Single compartment cell', 'D3BC5F', '6.3degC', [-0.025, -0.0125, 0, 0.03, 0.075]
-
-all_cells['Pyloric_LP'] = './coreprojects/PyloricNetwork/neuroConstruct/generatedNeuroML2/LP.cell.nml','Prinz et al. 2004<br/>Lateral Pyloric (LP) neuron', 'D3BC5F', '10degC', [-0.1, -0.05, 0, 0.03, 0.1]
-
-#all_cells['Pospi_FS'] = './coreprojects/PospischilEtAl2008/NeuroML2/cells/FS/FS.cell.nml'
-
-########   Problem with H channel???
-#all_cells['GranuleCell'] = './coreprojects/GranuleCell/neuroConstruct/generatedNeuroML2/Granule_98.cell.nml'
-
-
-##all_cells['Pospi_RS'] = './coreprojects/PospischilEtAl2008/NeuroML2/cells/RS/RS.cell.nml'
-
-
-#all_cells['FitzHughNagumo'] = './coreprojects/FitzHugh-Nagumo/NeuroML2/FN.cell.nml'
-
-#all_cells['L5PC_Hay'] = './coreprojects/L5bPyrCellHayEtAl2011/neuroConstruct/generatedNeuroML2/L5PC.cell.nml'
-#all_cells['CA1'] = './coreprojects/CA1PyramidalCell/neuroConstruct/generatedNeuroML2/CA1.cell.nml'
-#all_cells['Traub_L23PyrFRB'] = './coreprojects/Thalamocortical/neuroConstruct/generatedNeuroML2/L23PyrFRB.cell.nml'
-
-'''
-all_cells['Traub_DeepAxAx'] = './coreprojects/Thalamocortical/neuroConstruct/generatedNeuroML2/DeepAxAx.cell.nml'
-all_cells['Traub_L5TuftedPyrRS'] = './coreprojects/Thalamocortical/neuroConstruct/generatedNeuroML2/L5TuftedP
-all_cells['Traub_DeepAxAx'] = './coreprojects/Thalamocortical/neuroConstruct/generatedNeuroML2/DeepAxAx.cell.nml'yrRS.cell.nml'
-all_cells['Traub_DeepLTSInter'] = './coreprojects/Thalamocortical/neuroConstruct/generatedNeuroML2/DeepLTSInter.cell.nml'
-all_cells['Traub_SupBasket'] = './coreprojects/Thalamocortical/neuroConstruct/generatedNeuroML2/SupBasket.cell.nml'
-all_cells['Traub_SupLTSInter'] = './coreprojects/Thalamocortical/neuroConstruct/generatedNeuroML2/SupLTSInter.cell.nml'
-all_cells['Traub_L5TuftedPyrIB'] = './coreprojects/Thalamocortical/neuroConstruct/generatedNeuroML2/L5TuftedPyrIB.cell.nml'
-all_cells['Traub_SupAxAx'] = './coreprojects/Thalamocortical/neuroConstruct/generatedNeuroML2/SupAxAx.cell.nml'
-all_cells['Traub_L23PyrRS'] = './coreprojects/Thalamocortical/neuroConstruct/generatedNeuroML2/L23PyrRS.cell.nml'
-all_cells['Traub_nRT'] = './coreprojects/Thalamocortical/neuroConstruct/generatedNeuroML2/nRT.cell.nml'
-all_cells['Traub_DeepBasket'] = './coreprojects/Thalamocortical/neuroConstruct/generatedNeuroML2/DeepBasket.cell.nml'
-all_cells['Traub_TCR'] = './coreprojects/Thalamocortical/neuroConstruct/generatedNeuroML2/TCR.cell.nml'
-all_cells['Traub_L6NonTuftedPyrRS'] = './coreprojects/Thalamocortical/neuroConstruct/generatedNeuroML2/L6NonTuftedPyrRS.cell.nml'
-all_cells['Traub_L4SpinyStellate'] = './coreprojects/Thalamocortical/neuroConstruct/generatedNeuroML2/L4SpinyStellate.cell.nml'
-all_cells['L23_Smith'] = './coreprojects/SmithEtAl2013-L23DendriticSpikes/NeuroML2/L23_NoHotSpot.cell.nml'
-'''
