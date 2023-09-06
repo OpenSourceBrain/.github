@@ -12,19 +12,20 @@ allrefs['L5bPyrCellHayEtAl2011'] = {'category':'Neocortex','name':'Hay et al. (2
 allrefs['IzhikevichModel'] = {'category':'Neocortex','name':'Izhikevich (2003)','desc':'Spiking neuron model reproducing wide range of neuronal activity'}
 allrefs['BlueBrainProjectShowcase'] = {'category':'Neocortex','name':'Markram et al. (2015)','desc':'Cell models from Neocortical Microcircuit of Blue Brain Project'}
 allrefs['PospischilEtAl2008'] = {'category':'Neocortex','name':'Pospischil et al. (2008)','desc':'HH based model for different classes of cortical and thalamic neurons'}
+allrefs['PotjansDiesmann2014'] = {'category':'Neocortex','name':'Potjans and Diesmann (2014)','desc':'Microcircuit model of sensory cortex with 8 populations across 4 layers'}
 
-allrefs['PotjansDiesmann2014'] = 'Potjans and Diesmann (2014)'
 
-allrefs['M1NetworkModel'] = 'Dura-Bernal et al. (2017)'
-allrefs['SadehEtAl2017-InhibitionStabilizedNetworks'] = 'Sadeh et al. (2017)'
-allrefs['SmithEtAl2013-L23DendriticSpikes'] = 'Smith et al. (2013)'
-#allrefs['VERTEXShowcase'] = 'Tomsett et al. (2014)'
-allrefs['Thalamocortical'] = 'Traub et al. (2005)'
-allrefs['del-Molino2017'] = 'del-Molino2017'
-allrefs['WilsonCowan'] = 'WilsonCowan'
-allrefs['MejiasEtAl2016'] = 'MejiasEtAl2016'
-allrefs['JoglekarEtAl18'] = 'JoglekarEtAl18'
-allrefs['DemirtasEtAl19'] = 'DemirtasEtAl19'
+allrefs['M1NetworkModel'] = {'category':'Neocortex','name':'Dura-Bernal et al. (2017)','desc':'Model of mouse primary motor cortex (M1)'}
+allrefs['SadehEtAl2017-InhibitionStabilizedNetworks'] = {'category':'Neocortex','name':'Sadeh et al. (2017)','desc':'Point neuron model of Inhibition Stabilized Network'}
+allrefs['SmithEtAl2013-L23DendriticSpikes'] = {'category':'Neocortex','name':'Smith et al. (2013)','desc':'Layer 2/3 cell model used to investigate den- dritic spikes'}
+allrefs['Thalamocortical'] = {'category':'Neocortex','name':'Traub et al. (2005)','desc':'Single column network model containing 14 cell populations from cortex and thalamus'}
+allrefs['WilsonCowan'] = {'category':'Neocortex','name':'Wilson and Cowan (1972)','desc':'A classic rate based model describing the dynamics and interactions between the excitatory and inhibitory populations of neurons'}
+
+allrefs['del-Molino2017'] = {'category':'Neocortex','name':'del-Molino2017','desc':'Rate based model showing paradoxical response reversal of top-down modulation in cortical circuits with three interneuron types'}
+allrefs['MejiasEtAl2016'] = {'category':'Neocortex','name':'MejiasEtAl2016','desc':'XXX'}
+
+allrefs['JoglekarEtAl18'] = 'JoglekarEtAl18' # Need to check status...
+allrefs['DemirtasEtAl19'] = 'DemirtasEtAl19' # Need to check status...
 
 
 
@@ -74,14 +75,19 @@ allrefs['NEURONShowcase'] = {'category':'Showcases','name':'NEURON Showcase', 'd
 
 allrefs['neuroConstructShowcase'] = {'category':'Showcases','name':'neuroConstructShowcase', 'desc':'Examples of neuroConstruct projects'}
 
+allrefs['NSGPortalShowcase'] = {'category':'Showcases','name':'NSGPortalShowcase', 'desc':'Interactions with Neuroscience Gateway'}
+workflows['NSGPortalShowcase'] = []
+
 allrefs['BindsNETShowcase'] = 'BindsNETShowcase'   # No example code yet...
 allrefs['PsyNeuLinkShowcase'] = 'PsyNeuLinkShowcase'   # All working examples moved to MDF repo...
 allrefs['NWBShowcase'] = 'NWBShowcase'     # No NeuroML in here...
 workflows['NWBShowcase'] = ['ci.yml']
 allrefs['ConnectivityShowcase'] = 'ConnectivityShowcase'  # No real simulator there...
 
-# allrefs['ONNXShowcase'] = 'ONNXShowcase'  # All working examples moved to MDF repo...
+allrefs['VERTEXShowcase'] = 'VERTEXShowcase'  # No longer maintained...
+allrefs['StochasticityShowcase'] = 'StochasticityShowcase' # Not really a sim focussed showcase...
 
+# allrefs['ONNXShowcase'] = 'ONNXShowcase'  # All working examples moved to MDF repo...
 # allrefs['CSAShowcase'] = 'CSAShowcase'  # No longer maintained...
 
 allrefs['ghk-nernst'] = 'ghk-nernst'
@@ -119,12 +125,9 @@ allrefs['HNN'] = 'HNN'
 
 
 
-allrefs['VERTEXShowcase'] = 'VERTEXShowcase'
-allrefs['NSGPortalShowcase'] = 'NSGPortalShowcase'
 
 allrefs['NeuroElectroSciUnit'] = 'NeuroElectroSciUnit'
 allrefs['NengoNeuroML'] = 'NengoNeuroML'
-allrefs['StochasticityShowcase'] = 'StochasticityShowcase'
 allrefs['SynapticIntegration'] = 'SynapticIntegration'
 allrefs['SinusoidalVoltageProtocols'] = 'SinusoidalVoltageProtocols'
 
