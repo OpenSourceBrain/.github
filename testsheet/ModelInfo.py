@@ -37,7 +37,7 @@ allrefs['PinskyRinzelModel'] = {'category':'Hippocampus','name': 'Pinsky and Rin
 allrefs['WangBuzsaki1996'] = {'category':'Hippocampus','name': 'Wang and Buzsaki (1996)', 'desc':'Hippocampal interneuronal network model exhibiting gamma oscillations'}
 
 
-allrefs['MiglioreEtAl14_OlfactoryBulb3D'] = {'category':'Olfactory bulb','name':'Migliore et al. (2014)', 'desc': 'Large scale 3D olfactory bulb network'}
+allrefs['MiglioreEtAl14_OlfactoryBulb3D'] = {'category':'Olfactory bulb','name':'Migliore et al. (2014)', 'desc': 'Large scale 3D olfactory bulb network with detailed mitral cells and granule cells'}
 
 
 allrefs['openworm/hodgkin_huxley_tutorial'] = {'category':'Invertebrate','name': 'Hodgkin and Huxley (1952)' , 'desc': 'Classic investigation of the ionic basis of the action potential'}
@@ -54,12 +54,9 @@ allrefs['VervaekeEtAl-GolgiCellNetwork'] = 'Vervaeke et al. (2010)'
 
 
 
+allrefs['MorrisLecarModel'] = {'category':'General','name':'Morris and Lecar (1981)', 'desc': 'Two dimensional reduced neuron model with calcium and potassium conductances'}
+allrefs['HindmarshRose1984'] = {'category':'General','name':'Hindmarsh and Rose (1984)', 'desc': 'A simplified point cell model which captures complex firing patterns of single neurons, such as periodic and chaotic bursting'}
 
-
-
-allrefs['NeuroMorpho'] = 'NeuroMorpho.Org'
-allrefs['FitzHugh-Nagumo'] = 'FitzHugh-Nagumo'
-allrefs['MorrisLecarModel'] = 'MorrisLecarModel'
 
 
 allrefs['--------------------------'] = '--------------------------'
@@ -79,10 +76,14 @@ allrefs['EDENShowcase'] = {'category':'Showcases','name':'EDEN Showcase', 'desc'
 allrefs['TheVirtualBrainShowcase'] = {'category':'Showcases','name':'The Virtual Brain Showcase', 'desc':'Examples of interactions between NeuroML and TVB'}
 allrefs['NEURONShowcase'] = {'category':'Showcases','name':'NEURON Showcase', 'desc':'Examples of interactions between NeuroML and NEURON'}
 
-allrefs['neuroConstructShowcase'] = {'category':'Showcases','name':'neuroConstructShowcase', 'desc':'Examples of neuroConstruct projects'}
+allrefs['neuroConstructShowcase'] = {'category':'Showcases','name':'neuroConstruct Showcase', 'desc':'Examples of neuroConstruct projects'}
+
+allrefs['NeuroMorpho'] = {'category':'Showcases','name':'NeuroMorpho.Org', 'desc':'Examples of reconstructions from NeuroMorpho.Org'}
 
 allrefs['NSGPortalShowcase'] = {'category':'Showcases','name':'NSGPortalShowcase', 'desc':'Interactions with Neuroscience Gateway'}
 workflows['NSGPortalShowcase'] = []
+
+
 
 allrefs['BindsNETShowcase'] = 'BindsNETShowcase'   # No example code yet...
 allrefs['PsyNeuLinkShowcase'] = 'PsyNeuLinkShowcase'   # All working examples moved to MDF repo...
@@ -92,6 +93,7 @@ allrefs['ConnectivityShowcase'] = 'ConnectivityShowcase'  # No real simulator th
 
 allrefs['VERTEXShowcase'] = 'VERTEXShowcase'  # No longer maintained...
 allrefs['StochasticityShowcase'] = 'StochasticityShowcase' # Not really a sim focussed showcase...
+
 
 # allrefs['ONNXShowcase'] = 'ONNXShowcase'  # All working examples moved to MDF repo...
 # allrefs['CSAShowcase'] = 'CSAShowcase'  # No longer maintained...
