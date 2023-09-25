@@ -18,8 +18,8 @@ allrefs['M1NetworkModel'] = {'category':'Neocortex','name':'Dura-Bernal et al. (
 allrefs['SadehEtAl2017-InhibitionStabilizedNetworks'] = {'category':'Neocortex','name':'Sadeh et al. (2017)','desc':'Point neuron model of Inhibition Stabilized Network'}
 allrefs['SmithEtAl2013-L23DendriticSpikes'] = {'category':'Neocortex','name':'Smith et al. (2013)','desc':'Layer 2/3 cell model used to investigate den- dritic spikes'}
 allrefs['Thalamocortical'] = {'category':'Neocortex','name':'Traub et al. (2005)','desc':'Single column network model containing 14 cell populations from cortex and thalamus'}
-allrefs['WilsonCowan'] = {'category':'Neocortex','name':'Wilson and Cowan (1972)','desc':'A classic rate based model describing the dynamics and interactions between the excitatory and inhibitory populations of neurons'}
 
+allrefs['WilsonCowan'] = {'category':'Neocortex','name':'Wilson and Cowan (1972)','desc':'A classic rate based model describing the dynamics and interactions between the excitatory and inhibitory populations of neurons'}
 allrefs['del-Molino2017'] = {'category':'Neocortex','name':'del-Molino2017','desc':'Rate based model showing paradoxical response reversal of top-down modulation in cortical circuits with three interneuron types'}
 allrefs['MejiasEtAl2016'] = {'category':'Neocortex','name':'MejiasEtAl2016','desc':'A rate based model simulating the dynamics of a cortical laminar structure across multiple scales: intralaminar, interlaminar, interareal and whole cortex'}
 
@@ -27,10 +27,24 @@ allrefs['JoglekarEtAl18'] = 'JoglekarEtAl18' # Need to check status...
 allrefs['DemirtasEtAl19'] = 'DemirtasEtAl19' # Need to check status...
 
 
-
 allrefs['GranCellLayer'] = {'category':'Cerebellum','name':'Maex and De Schutter (1998)', 'desc':'Cerebellar granule cell layer network'}
 
+allrefs['mbezaire/ca1'] = {'category':'Hippocampus','name': 'Bezaire et al. (2016)', 'desc':'Full scale network model of CA1 region of hippocampus'}
+allrefs['FergusonEtAl2013-PVFastFiringCell'] = {'category':'Hippocampus','name': 'Ferguson et al. (2013)', 'desc':'Parvalbumin-positive interneuron from CA1, based on Izhikevich cell model'}
+allrefs['FergusonEtAl2014-CA1PyrCell'] = {'category':'Hippocampus','name': 'Ferguson et al. (2014)', 'desc':'Pyramidal cell from CA1, based on Izhikevich cell model'}
+allrefs['CA1PyramidalCell'] = {'category':'Hippocampus','name': 'Migliore et al. (2005)', 'desc':'Multicompartmental model of pyramidal cell from CA1 region of hippocampus'}
+allrefs['PinskyRinzelModel'] = {'category':'Hippocampus','name': 'Pinsky and Rinzel (1994)', 'desc':'Simplified model of CA3 pyramidal cell'}
+allrefs['WangBuzsaki1996'] = {'category':'Hippocampus','name': 'Wang and Buzsaki (1996)', 'desc':'Hippocampal interneuronal network model exhibiting gamma oscillations'}
+
+
 allrefs['MiglioreEtAl14_OlfactoryBulb3D'] = {'category':'Olfactory bulb','name':'Migliore et al. (2014)', 'desc': 'Large scale 3D olfactory bulb network'}
+
+
+allrefs['openworm/hodgkin_huxley_tutorial'] = {'category':'Invertebrate','name': 'Hodgkin and Huxley (1952)' , 'desc': 'Classic investigation of the ionic basis of the action potential'}
+allrefs['openworm/muscle_model'] = {'category':'Invertebrate','name': 'Boyle and Cohen (2008)' , 'desc': 'Model of body wall muscle from C. elegans'}
+allrefs['FitzHugh-Nagumo'] = {'category':'Invertebrate','name': 'FitzHugh (1961)' , 'desc': 'Simplified form of Hodgkin Huxley model'}
+allrefs['PyloricNetwork'] = {'category':'Invertebrate','name': 'Prinz et al. (2004)' , 'desc': 'Pyloric network of the lobster stomatogastric ganglion system'}
+
 
 
 allrefs['SilverLabUCL/MF-GC-network-backprop-public'] = 'Cayco-Gajic et al. (2017)'
@@ -39,19 +53,10 @@ allrefs['SolinasEtAl-GolgiCell'] = 'Solinas et al. (2007)'
 allrefs['VervaekeEtAl-GolgiCellNetwork'] = 'Vervaeke et al. (2010)'
 
 
-allrefs['mbezaire/ca1'] = 'Bezaire et al. (2016)'
-allrefs['FergusonEtAl2013-PVFastFiringCell'] = 'Ferguson et al. (2013)'
-allrefs['CA1PyramidalCell'] = 'Migliore et al. (2005)'
-allrefs['PinskyRinzelModel'] = 'Pinsky and Rinzel (1994)'
-allrefs['WangBuzsaki1996'] = 'Wang and Buzsaki (1996)'
 
 
 
 
-allrefs['openworm/muscle_model'] = 'Boyle and Cohen (2008)'
-allrefs['FitzHugh-Nagumo'] = 'FitzHugh (1961)'
-allrefs['openworm/hodgkin_huxley_tutorial'] = 'Hodgkin and Huxley (1952)'
-allrefs['PyloricNetwork'] = 'Prinz et al. (2004)'
 allrefs['NeuroMorpho'] = 'NeuroMorpho.Org'
 allrefs['FitzHugh-Nagumo'] = 'FitzHugh-Nagumo'
 allrefs['MorrisLecarModel'] = 'MorrisLecarModel'
@@ -96,8 +101,6 @@ allrefs['ghk-nernst'] = 'ghk-nernst'
 allrefs['-------------------------'] = '--------------------------'
 
 allrefs['Drosophila_Projection_Neuron'] = 'Drosophila_Projection_Neuron'
-allrefs['FergusonEtAl2014-CA1PyrCell'] = 'FergusonEtAl2014-CA1PyrCell'
-allrefs['FergusonEtAl2013-PVFastFiringCell'] = 'FergusonEtAl2013-PVFastFiringCell'
 allrefs['NorenbergEtAl2010_DGBasketCell'] = 'NorenbergEtAl2010_DGBasketCell'
 allrefs['DentateGyrus2005'] = 'DentateGyrus2005'
 allrefs['StriatalSpinyProjectionNeuron'] = 'StriatalSpinyProjectionNeuron'
