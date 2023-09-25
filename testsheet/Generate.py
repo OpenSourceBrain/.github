@@ -9,11 +9,11 @@ info = """
 YES = ' \\multicolumn{1}{c}{Yes} '
 YES = ' \\ding{51} '
 
-categories = ['Neocortex', 'Cerebellum', 'Showcases']
+categories = ['Neocortex', 'Cerebellum', "Hippocampus",  "Olfactory bulb", "Invertebrate","General",'Showcases']
 
 
 for category in categories:
-    info += "[%s](#%s) | "%(category, category.lower())
+    info += "[%s](#%s) | "%(category, category.lower().replace(' ','-'))
 
 info += "[Others](#others) "
 

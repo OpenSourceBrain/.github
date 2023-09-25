@@ -14,7 +14,6 @@ allrefs['BlueBrainProjectShowcase'] = {'category':'Neocortex','name':'Markram et
 allrefs['PospischilEtAl2008'] = {'category':'Neocortex','name':'Pospischil et al. (2008)','desc':'HH based model for different classes of cortical and thalamic neurons'}
 allrefs['PotjansDiesmann2014'] = {'category':'Neocortex','name':'Potjans and Diesmann (2014)','desc':'Microcircuit model of sensory cortex with 8 populations across 4 layers'}
 
-
 allrefs['M1NetworkModel'] = {'category':'Neocortex','name':'Dura-Bernal et al. (2017)','desc':'Model of mouse primary motor cortex (M1)'}
 allrefs['SadehEtAl2017-InhibitionStabilizedNetworks'] = {'category':'Neocortex','name':'Sadeh et al. (2017)','desc':'Point neuron model of Inhibition Stabilized Network'}
 allrefs['SmithEtAl2013-L23DendriticSpikes'] = {'category':'Neocortex','name':'Smith et al. (2013)','desc':'Layer 2/3 cell model used to investigate den- dritic spikes'}
@@ -22,7 +21,7 @@ allrefs['Thalamocortical'] = {'category':'Neocortex','name':'Traub et al. (2005)
 allrefs['WilsonCowan'] = {'category':'Neocortex','name':'Wilson and Cowan (1972)','desc':'A classic rate based model describing the dynamics and interactions between the excitatory and inhibitory populations of neurons'}
 
 allrefs['del-Molino2017'] = {'category':'Neocortex','name':'del-Molino2017','desc':'Rate based model showing paradoxical response reversal of top-down modulation in cortical circuits with three interneuron types'}
-allrefs['MejiasEtAl2016'] = {'category':'Neocortex','name':'MejiasEtAl2016','desc':'XXX'}
+allrefs['MejiasEtAl2016'] = {'category':'Neocortex','name':'MejiasEtAl2016','desc':'A rate based model simulating the dynamics of a cortical laminar structure across multiple scales: intralaminar, interlaminar, interareal and whole cortex'}
 
 allrefs['JoglekarEtAl18'] = 'JoglekarEtAl18' # Need to check status...
 allrefs['DemirtasEtAl19'] = 'DemirtasEtAl19' # Need to check status...
@@ -30,6 +29,9 @@ allrefs['DemirtasEtAl19'] = 'DemirtasEtAl19' # Need to check status...
 
 
 allrefs['GranCellLayer'] = {'category':'Cerebellum','name':'Maex and De Schutter (1998)', 'desc':'Cerebellar granule cell layer network'}
+
+allrefs['MiglioreEtAl14_OlfactoryBulb3D'] = {'category':'Olfactory bulb','name':'Migliore et al. (2014)', 'desc': 'Large scale 3D olfactory bulb network'}
+
 
 allrefs['SilverLabUCL/MF-GC-network-backprop-public'] = 'Cayco-Gajic et al. (2017)'
 allrefs['GranuleCell'] = 'Maex and De Schutter (1998) GrC'
@@ -44,7 +46,6 @@ allrefs['PinskyRinzelModel'] = 'Pinsky and Rinzel (1994)'
 allrefs['WangBuzsaki1996'] = 'Wang and Buzsaki (1996)'
 
 
-allrefs['MiglioreEtAl14_OlfactoryBulb3D'] = 'Migliore et al. (2014)'
 
 
 allrefs['openworm/muscle_model'] = 'Boyle and Cohen (2008)'

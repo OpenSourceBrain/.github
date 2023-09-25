@@ -1,6 +1,6 @@
 
 ## Tests on OSB models
-[Neocortex](#neocortex) | [Cerebellum](#cerebellum) | [Showcases](#showcases) | [Others](#others) 
+[Neocortex](#neocortex) | [Cerebellum](#cerebellum) | [Hippocampus](#hippocampus) | [Olfactory bulb](#olfactory-bulb) | [Invertebrate](#invertebrate) | [General](#general) | [Showcases](#showcases) | [Others](#others) 
     
 ### Neocortex
   | Model | Tests | Pull requests |
@@ -18,7 +18,7 @@
  | <a href="https://github.com/OpenSourceBrain/Thalamocortical">Traub et al. (2005)</a><br/><i><sup>Single column network model containing 14 cell populations from cortex and thalamus</sup></i> |  [![OMV](https://github.com/OpenSourceBrain/Thalamocortical/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/OpenSourceBrain/Thalamocortical/actions/workflows/omv-ci.yml)   [![ ](https://github.com/OpenSourceBrain/Thalamocortical/actions/workflows/non-omv.yml/badge.svg)](https://github.com/OpenSourceBrain/Thalamocortical/actions/workflows/non-omv.yml) |   [![GitHub pull requests](https://img.shields.io/github/issues-pr/OpenSourceBrain/Thalamocortical)](https://github.com/OpenSourceBrain/Thalamocortical/pulls) | 
  | <a href="https://github.com/OpenSourceBrain/WilsonCowan">Wilson and Cowan (1972)</a><br/><i><sup>A classic rate based model describing the dynamics and interactions between the excitatory and inhibitory populations of neurons</sup></i> |  [![OMV](https://github.com/OpenSourceBrain/WilsonCowan/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/OpenSourceBrain/WilsonCowan/actions/workflows/omv-ci.yml)   [![ ](https://github.com/OpenSourceBrain/WilsonCowan/actions/workflows/non-omv.yml/badge.svg)](https://github.com/OpenSourceBrain/WilsonCowan/actions/workflows/non-omv.yml) |   [![GitHub pull requests](https://img.shields.io/github/issues-pr/OpenSourceBrain/WilsonCowan)](https://github.com/OpenSourceBrain/WilsonCowan/pulls) | 
  | <a href="https://github.com/OpenSourceBrain/del-Molino2017">del-Molino2017</a><br/><i><sup>Rate based model showing paradoxical response reversal of top-down modulation in cortical circuits with three interneuron types</sup></i> |  [![OMV](https://github.com/OpenSourceBrain/del-Molino2017/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/OpenSourceBrain/del-Molino2017/actions/workflows/omv-ci.yml)   [![ ](https://github.com/OpenSourceBrain/del-Molino2017/actions/workflows/non-omv.yml/badge.svg)](https://github.com/OpenSourceBrain/del-Molino2017/actions/workflows/non-omv.yml) |   [![GitHub pull requests](https://img.shields.io/github/issues-pr/OpenSourceBrain/del-Molino2017)](https://github.com/OpenSourceBrain/del-Molino2017/pulls) | 
- | <a href="https://github.com/OpenSourceBrain/MejiasEtAl2016">MejiasEtAl2016</a><br/><i><sup>XXX</sup></i> |  [![OMV](https://github.com/OpenSourceBrain/MejiasEtAl2016/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/OpenSourceBrain/MejiasEtAl2016/actions/workflows/omv-ci.yml)   [![ ](https://github.com/OpenSourceBrain/MejiasEtAl2016/actions/workflows/non-omv.yml/badge.svg)](https://github.com/OpenSourceBrain/MejiasEtAl2016/actions/workflows/non-omv.yml) |   [![GitHub pull requests](https://img.shields.io/github/issues-pr/OpenSourceBrain/MejiasEtAl2016)](https://github.com/OpenSourceBrain/MejiasEtAl2016/pulls) | 
+ | <a href="https://github.com/OpenSourceBrain/MejiasEtAl2016">MejiasEtAl2016</a><br/><i><sup>A rate based model simulating the dynamics of a cortical laminar structure across multiple scales: intralaminar, interlaminar, interareal and whole cortex</sup></i> |  [![OMV](https://github.com/OpenSourceBrain/MejiasEtAl2016/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/OpenSourceBrain/MejiasEtAl2016/actions/workflows/omv-ci.yml)   [![ ](https://github.com/OpenSourceBrain/MejiasEtAl2016/actions/workflows/non-omv.yml/badge.svg)](https://github.com/OpenSourceBrain/MejiasEtAl2016/actions/workflows/non-omv.yml) |   [![GitHub pull requests](https://img.shields.io/github/issues-pr/OpenSourceBrain/MejiasEtAl2016)](https://github.com/OpenSourceBrain/MejiasEtAl2016/pulls) | 
   </table>
 
     
@@ -26,6 +26,31 @@
   | Model | Tests | Pull requests |
   |----------|:------:|:------:|
  | <a href="https://github.com/OpenSourceBrain/GranCellLayer">Maex and De Schutter (1998)</a><br/><i><sup>Cerebellar granule cell layer network</sup></i> |  [![OMV](https://github.com/OpenSourceBrain/GranCellLayer/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/OpenSourceBrain/GranCellLayer/actions/workflows/omv-ci.yml)   [![ ](https://github.com/OpenSourceBrain/GranCellLayer/actions/workflows/non-omv.yml/badge.svg)](https://github.com/OpenSourceBrain/GranCellLayer/actions/workflows/non-omv.yml) |   [![GitHub pull requests](https://img.shields.io/github/issues-pr/OpenSourceBrain/GranCellLayer)](https://github.com/OpenSourceBrain/GranCellLayer/pulls) | 
+  </table>
+
+    
+### Hippocampus
+  | Model | Tests | Pull requests |
+  |----------|:------:|:------:|
+  </table>
+
+    
+### Olfactory bulb
+  | Model | Tests | Pull requests |
+  |----------|:------:|:------:|
+ | <a href="https://github.com/OpenSourceBrain/MiglioreEtAl14_OlfactoryBulb3D">Migliore et al. (2014)</a><br/><i><sup>Large scale olfactory bulb network</sup></i> |  [![OMV](https://github.com/OpenSourceBrain/MiglioreEtAl14_OlfactoryBulb3D/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/OpenSourceBrain/MiglioreEtAl14_OlfactoryBulb3D/actions/workflows/omv-ci.yml)   [![ ](https://github.com/OpenSourceBrain/MiglioreEtAl14_OlfactoryBulb3D/actions/workflows/non-omv.yml/badge.svg)](https://github.com/OpenSourceBrain/MiglioreEtAl14_OlfactoryBulb3D/actions/workflows/non-omv.yml) |   [![GitHub pull requests](https://img.shields.io/github/issues-pr/OpenSourceBrain/MiglioreEtAl14_OlfactoryBulb3D)](https://github.com/OpenSourceBrain/MiglioreEtAl14_OlfactoryBulb3D/pulls) | 
+  </table>
+
+    
+### Invertebrate
+  | Model | Tests | Pull requests |
+  |----------|:------:|:------:|
+  </table>
+
+    
+### General
+  | Model | Tests | Pull requests |
+  |----------|:------:|:------:|
   </table>
 
     
@@ -61,7 +86,6 @@
  | <a href="https://github.com/OpenSourceBrain/CA1PyramidalCell">Migliore et al. (2005)</a> |  [![OMV](https://github.com/OpenSourceBrain/CA1PyramidalCell/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/OpenSourceBrain/CA1PyramidalCell/actions/workflows/omv-ci.yml)   [![ ](https://github.com/OpenSourceBrain/CA1PyramidalCell/actions/workflows/non-omv.yml/badge.svg)](https://github.com/OpenSourceBrain/CA1PyramidalCell/actions/workflows/non-omv.yml) |   [![GitHub pull requests](https://img.shields.io/github/issues-pr/OpenSourceBrain/CA1PyramidalCell)](https://github.com/OpenSourceBrain/CA1PyramidalCell/pulls) | 
  | <a href="https://github.com/OpenSourceBrain/PinskyRinzelModel">Pinsky and Rinzel (1994)</a> |  [![OMV](https://github.com/OpenSourceBrain/PinskyRinzelModel/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/OpenSourceBrain/PinskyRinzelModel/actions/workflows/omv-ci.yml)   [![ ](https://github.com/OpenSourceBrain/PinskyRinzelModel/actions/workflows/non-omv.yml/badge.svg)](https://github.com/OpenSourceBrain/PinskyRinzelModel/actions/workflows/non-omv.yml) |   [![GitHub pull requests](https://img.shields.io/github/issues-pr/OpenSourceBrain/PinskyRinzelModel)](https://github.com/OpenSourceBrain/PinskyRinzelModel/pulls) | 
  | <a href="https://github.com/OpenSourceBrain/WangBuzsaki1996">Wang and Buzsaki (1996)</a> |  [![OMV](https://github.com/OpenSourceBrain/WangBuzsaki1996/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/OpenSourceBrain/WangBuzsaki1996/actions/workflows/omv-ci.yml)   [![ ](https://github.com/OpenSourceBrain/WangBuzsaki1996/actions/workflows/non-omv.yml/badge.svg)](https://github.com/OpenSourceBrain/WangBuzsaki1996/actions/workflows/non-omv.yml) |   [![GitHub pull requests](https://img.shields.io/github/issues-pr/OpenSourceBrain/WangBuzsaki1996)](https://github.com/OpenSourceBrain/WangBuzsaki1996/pulls) | 
- | <a href="https://github.com/OpenSourceBrain/MiglioreEtAl14_OlfactoryBulb3D">Migliore et al. (2014)</a> |  [![OMV](https://github.com/OpenSourceBrain/MiglioreEtAl14_OlfactoryBulb3D/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/OpenSourceBrain/MiglioreEtAl14_OlfactoryBulb3D/actions/workflows/omv-ci.yml)   [![ ](https://github.com/OpenSourceBrain/MiglioreEtAl14_OlfactoryBulb3D/actions/workflows/non-omv.yml/badge.svg)](https://github.com/OpenSourceBrain/MiglioreEtAl14_OlfactoryBulb3D/actions/workflows/non-omv.yml) |   [![GitHub pull requests](https://img.shields.io/github/issues-pr/OpenSourceBrain/MiglioreEtAl14_OlfactoryBulb3D)](https://github.com/OpenSourceBrain/MiglioreEtAl14_OlfactoryBulb3D/pulls) | 
  | <a href="https://github.com/openworm/muscle_model">Boyle and Cohen (2008)</a> |  [![OMV](https://github.com/openworm/muscle_model/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/openworm/muscle_model/actions/workflows/omv-ci.yml)   [![ ](https://github.com/openworm/muscle_model/actions/workflows/non-omv.yml/badge.svg)](https://github.com/openworm/muscle_model/actions/workflows/non-omv.yml) |   [![GitHub pull requests](https://img.shields.io/github/issues-pr/openworm/muscle_model)](https://github.com/openworm/muscle_model/pulls) | 
  | <a href="https://github.com/OpenSourceBrain/FitzHugh-Nagumo">FitzHugh-Nagumo</a> |  [![OMV](https://github.com/OpenSourceBrain/FitzHugh-Nagumo/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/OpenSourceBrain/FitzHugh-Nagumo/actions/workflows/omv-ci.yml)   [![ ](https://github.com/OpenSourceBrain/FitzHugh-Nagumo/actions/workflows/non-omv.yml/badge.svg)](https://github.com/OpenSourceBrain/FitzHugh-Nagumo/actions/workflows/non-omv.yml) |   [![GitHub pull requests](https://img.shields.io/github/issues-pr/OpenSourceBrain/FitzHugh-Nagumo)](https://github.com/OpenSourceBrain/FitzHugh-Nagumo/pulls) | 
  | <a href="https://github.com/openworm/hodgkin_huxley_tutorial">Hodgkin and Huxley (1952)</a> |  [![OMV](https://github.com/openworm/hodgkin_huxley_tutorial/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/openworm/hodgkin_huxley_tutorial/actions/workflows/omv-ci.yml)   [![ ](https://github.com/openworm/hodgkin_huxley_tutorial/actions/workflows/non-omv.yml/badge.svg)](https://github.com/openworm/hodgkin_huxley_tutorial/actions/workflows/non-omv.yml) |   [![GitHub pull requests](https://img.shields.io/github/issues-pr/openworm/hodgkin_huxley_tutorial)](https://github.com/openworm/hodgkin_huxley_tutorial/pulls) | 
