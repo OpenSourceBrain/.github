@@ -4,6 +4,11 @@ import os
 
 info = """
 ## Tests on OSB models
+
+The models from various brain regions highlighted below have been well tested, with significant portions converted to NeuroML and/or PyNN.
+
+See also [Gleeson et al 2019](https://www.cell.com/neuron/fulltext/S0896-6273(19)30444-1).
+
 """
 
 YES = ' \\multicolumn{1}{c}{Yes} '
@@ -61,6 +66,8 @@ for category in categories:
 
 info += """
 ### Others
+
+Note: these models may still be in development, or may not have been recently updated. Use with caution. 
 """
 
 count = 0

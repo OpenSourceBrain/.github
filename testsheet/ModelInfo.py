@@ -19,15 +19,24 @@ allrefs['SadehEtAl2017-InhibitionStabilizedNetworks'] = {'category':'Neocortex',
 allrefs['SmithEtAl2013-L23DendriticSpikes'] = {'category':'Neocortex','name':'Smith et al. (2013)','desc':'Layer 2/3 cell model used to investigate den- dritic spikes'}
 allrefs['Thalamocortical'] = {'category':'Neocortex','name':'Traub et al. (2005)','desc':'Single column network model containing 14 cell populations from cortex and thalamus'}
 
+allrefs['BahlEtAl2012_ReducedL5PyrCell'] = {'category':'Neocortex','name':'Bahl et al. (2012)','desc':'A set of reduced models of layer 5 pyramidal neurons'}
+
 allrefs['WilsonCowan'] = {'category':'Neocortex','name':'Wilson and Cowan (1972)','desc':'A classic rate based model describing the dynamics and interactions between the excitatory and inhibitory populations of neurons'}
 allrefs['del-Molino2017'] = {'category':'Neocortex','name':'del-Molino2017','desc':'Rate based model showing paradoxical response reversal of top-down modulation in cortical circuits with three interneuron types'}
 allrefs['MejiasEtAl2016'] = {'category':'Neocortex','name':'MejiasEtAl2016','desc':'A rate based model simulating the dynamics of a cortical laminar structure across multiple scales: intralaminar, interlaminar, interareal and whole cortex'}
 
 allrefs['JoglekarEtAl18'] = 'JoglekarEtAl18' # Need to check status...
 allrefs['DemirtasEtAl19'] = 'DemirtasEtAl19' # Need to check status...
+allrefs['MultiscaleISN'] = 'MultiscaleISN' # Need to check status...
 
 
 allrefs['GranCellLayer'] = {'category':'Cerebellum','name':'Maex and De Schutter (1998)', 'desc':'Cerebellar granule cell layer network'}
+allrefs['SilverLabUCL/MF-GC-network-backprop-public'] = {'category':'Cerebellum','name': 'Cayco-Gajic et al. (2017)', 'desc':'Cerebellar granule cell layer network'}
+allrefs['GranuleCell'] = {'category':'Cerebellum','name': 'Maex and De Schutter (1998) (GrC)', 'desc':'Cerebellar granule cell'}
+allrefs['SolinasEtAl-GolgiCell'] = {'category':'Cerebellum','name': 'Solinas et al. (2007)', 'desc':'Cerebellar Golgi cell model'}
+allrefs['VervaekeEtAl-GolgiCellNetwork'] = {'category':'Cerebellum','name': 'Vervaeke et al. (2010)', 'desc':'Electrically connected cerebellar Golgi cell network model'}
+
+
 
 allrefs['mbezaire/ca1'] = {'category':'Hippocampus','name': 'Bezaire et al. (2016)', 'desc':'Full scale network model of CA1 region of hippocampus'}
 allrefs['FergusonEtAl2013-PVFastFiringCell'] = {'category':'Hippocampus','name': 'Ferguson et al. (2013)', 'desc':'Parvalbumin-positive interneuron from CA1, based on Izhikevich cell model'}
@@ -41,25 +50,20 @@ allrefs['MiglioreEtAl14_OlfactoryBulb3D'] = {'category':'Olfactory bulb','name':
 
 
 allrefs['openworm/hodgkin_huxley_tutorial'] = {'category':'Invertebrate','name': 'Hodgkin and Huxley (1952)' , 'desc': 'Classic investigation of the ionic basis of the action potential'}
-allrefs['openworm/muscle_model'] = {'category':'Invertebrate','name': 'Boyle and Cohen (2008)' , 'desc': 'Model of body wall muscle from C. elegans'}
 allrefs['FitzHugh-Nagumo'] = {'category':'Invertebrate','name': 'FitzHugh (1961)' , 'desc': 'Simplified form of Hodgkin Huxley model'}
 allrefs['PyloricNetwork'] = {'category':'Invertebrate','name': 'Prinz et al. (2004)' , 'desc': 'Pyloric network of the lobster stomatogastric ganglion system'}
+allrefs['openworm/muscle_model'] = {'category':'Invertebrate','name': 'Boyle and Cohen (2008)' , 'desc': 'Model of body wall muscle from C. elegans'}
+allrefs['openworm/c302'] = {'category':'Invertebrate','name': 'Gleeson et al. (2018)' , 'desc': 'A multiscale framework for modelling the nervous system of C. elegans'}
 
-
-
-allrefs['SilverLabUCL/MF-GC-network-backprop-public'] = 'Cayco-Gajic et al. (2017)'
-allrefs['GranuleCell'] = 'Maex and De Schutter (1998) GrC'
-allrefs['SolinasEtAl-GolgiCell'] = 'Solinas et al. (2007)'
-allrefs['VervaekeEtAl-GolgiCellNetwork'] = 'Vervaeke et al. (2010)'
 
 
 
 allrefs['MorrisLecarModel'] = {'category':'General','name':'Morris and Lecar (1981)', 'desc': 'Two dimensional reduced neuron model with calcium and potassium conductances'}
 allrefs['HindmarshRose1984'] = {'category':'General','name':'Hindmarsh and Rose (1984)', 'desc': 'A simplified point cell model which captures complex firing patterns of single neurons, such as periodic and chaotic bursting'}
 
+allrefs['ghk-nernst'] = 'ghk-nernst'
 
 
-allrefs['--------------------------'] = '--------------------------'
 
 
 allrefs['MouseLightShowcase'] = {'category':'Showcases','name':'Janelia MouseLight', 'desc':'Janelia MouseLight project neuronal reconstructions'}
@@ -98,9 +102,7 @@ allrefs['StochasticityShowcase'] = 'StochasticityShowcase' # Not really a sim fo
 # allrefs['ONNXShowcase'] = 'ONNXShowcase'  # All working examples moved to MDF repo...
 # allrefs['CSAShowcase'] = 'CSAShowcase'  # No longer maintained...
 
-allrefs['ghk-nernst'] = 'ghk-nernst'
 
-allrefs['-------------------------'] = '--------------------------'
 
 allrefs['Drosophila_Projection_Neuron'] = 'Drosophila_Projection_Neuron'
 allrefs['NorenbergEtAl2010_DGBasketCell'] = 'NorenbergEtAl2010_DGBasketCell'
@@ -121,15 +123,10 @@ allrefs['korngreen-pyramidal'] = 'korngreen-pyramidal'
 allrefs['dLGNinterneuronHalnesEtAl2011'] = 'dLGNinterneuronHalnesEtAl2011'
 allrefs['L23PyramidalCellTutorial'] = 'L23PyramidalCellTutorial'
 allrefs['EbnerEtAl2019'] = 'EbnerEtAl2019'
-allrefs['BahlEtAl2012_ReducedL5PyrCell'] = 'BahlEtAl2012_ReducedL5PyrCell'
 allrefs['V1NetworkModels'] = 'V1NetworkModels'
 allrefs['VogelsEtAl2011'] = 'VogelsEtAl2011'
 allrefs['WeilerEtAl08-LaminarCortex'] = 'WeilerEtAl08-LaminarCortex'
-allrefs['MultiscaleISN'] = 'MultiscaleISN'
 allrefs['HNN'] = 'HNN'
-
-
-
 
 
 allrefs['NeuroElectroSciUnit'] = 'NeuroElectroSciUnit'
