@@ -31,16 +31,16 @@ allrefs['MultiscaleISN'] = 'MultiscaleISN' # Need to check status...
 
 
 allrefs['GranuleCell'] = {'category':'Cerebellum','name': 'Maex and De Schutter (1998) (GrC)', 'desc':'Cerebellar granule cell', 'cite':'Maex1998'}
-allrefs['SilverLabUCL/MF-GC-network-backprop-public'] = {'category':'Cerebellum','name': 'Cayco-Gajic et al. (2017)', 'desc':'Cerebellar granule cell layer network', 'cite':'XXX'}
+allrefs['SilverLabUCL/MF-GC-network-backprop-public'] = {'category':'Cerebellum','name': 'Cayco-Gajic et al. (2017)', 'desc':'Cerebellar granule cell layer network', 'cite':'Cayco-Gajic2017'}
 allrefs['GranCellLayer'] = {'category':'Cerebellum','name':'Maex and De Schutter (1998)', 'desc':'3D Cerebellar granule cell layer network', 'cite':'Maex1998'}
-allrefs['SolinasEtAl-GolgiCell'] = {'category':'Cerebellum','name': 'Solinas et al. (2007)', 'desc':'Cerebellar Golgi cell model', 'cite':'XXX'}
-allrefs['VervaekeEtAl-GolgiCellNetwork'] = {'category':'Cerebellum','name': 'Vervaeke et al. (2010)', 'desc':'Electrically connected cerebellar Golgi cell network model', 'cite':'XXX'}
+allrefs['SolinasEtAl-GolgiCell'] = {'category':'Cerebellum','name': 'Solinas et al. (2007)', 'desc':'Cerebellar Golgi cell model', 'cite':'Solinas07a'}
+allrefs['VervaekeEtAl-GolgiCellNetwork'] = {'category':'Cerebellum','name': 'Vervaeke et al. (2010)', 'desc':'Electrically connected cerebellar Golgi cell network model', 'cite':'Vervaeke10'}
 
 
 
-allrefs['mbezaire/ca1'] = {'category':'Hippocampus','name': 'Bezaire et al. (2016)', 'desc':'Full scale network model of CA1 region of hippocampus', 'cite':'XXX'}
-allrefs['FergusonEtAl2013-PVFastFiringCell'] = {'category':'Hippocampus','name': 'Ferguson et al. (2013)', 'desc':'Parvalbumin-positive interneuron from CA1, based on Izhikevich cell model', 'cite':'XXX'}
-allrefs['FergusonEtAl2014-CA1PyrCell'] = {'category':'Hippocampus','name': 'Ferguson et al. (2014)', 'desc':'Pyramidal cell from CA1, based on Izhikevich cell model', 'cite':'XXX'}
+allrefs['mbezaire/ca1'] = {'category':'Hippocampus','name': 'Bezaire et al. (2016)', 'desc':'Full scale network model of CA1 region of hippocampus', 'cite':'Bezaire2016'}
+allrefs['FergusonEtAl2013-PVFastFiringCell'] = {'category':'Hippocampus','name': 'Ferguson et al. (2013)', 'desc':'Parvalbumin-positive interneuron from CA1, based on Izhikevich cell model', 'cite':'Ferguson2013'}
+allrefs['FergusonEtAl2014-CA1PyrCell'] = {'category':'Hippocampus','name': 'Ferguson et al. (2014)', 'desc':'Pyramidal cell from CA1, based on Izhikevich cell model', 'cite':'Ferguson2014'}
 allrefs['CA1PyramidalCell'] = {'category':'Hippocampus','name': 'Migliore et al. (2005)', 'desc':'Multicompartmental model of pyramidal cell from CA1 region of hippocampus', 'cite':'XXX'}
 allrefs['PinskyRinzelModel'] = {'category':'Hippocampus','name': 'Pinsky and Rinzel (1994)', 'desc':'Simplified model of CA3 pyramidal cell', 'cite':'XXX'}
 allrefs['WangBuzsaki1996'] = {'category':'Hippocampus','name': 'Wang and Buzsaki (1996)', 'desc':'Hippocampal interneuronal network model exhibiting gamma oscillations', 'cite':'XXX'}
