@@ -11,6 +11,20 @@ See also [Gleeson et al 2019](https://www.cell.com/neuron/fulltext/S0896-6273(19
 
 """
 
+cite = """
+
+\\begin{table}[tp]
+  \centering
+  \caption{Listing of NeuroML models and example repositories}\label{tab:model-list}
+  \\rowcolors{1}{table-shade}{white}
+  \\footnotesize
+  \\begin{tabularx}{\\textwidth}{lXl}
+    \\toprule%
+    \\hiderowcolors%
+    \\textbf{Model} & \\textbf{Description} &  \\textbf{URL} \\\\
+
+"""
+
 YES = ' \\multicolumn{1}{c}{Yes} '
 YES = ' \\ding{51} '
 
@@ -27,6 +41,11 @@ for category in categories:
     info += """
     \n### %s\n"""%category
 
+    cite += "    \midrule% \n"
+    cite += "    \multicolumn{3}{c}{\\textbf{%s}}\setcounter{rownum}{0}\\\\  \n"%category
+    cite += "    \midrule% \n"
+    cite += "    \showrowcolors% \n"
+
 
     info += '  | Model | Tests | Pull requests |\n'
     info += '  |----------|:------:|:------:|\n'
@@ -41,7 +60,12 @@ for category in categories:
             name = allinfo['name']
             desc = allinfo['desc']
 
+
             gh = 'OpenSourceBrain/%s'%directory if not '/' in directory else directory
+
+
+            cite += "     %s & %s & \href{https://github.com/%s}{URL}\\\\ \n"%('\cite{%s}'%allinfo['cite'] if 'cite' in allinfo else name, desc, gh)
+
 
             info += ' | <a href="https://github.com/%s">%s</a><br/><i><sup>%s</sup></i> |'%(gh,name, desc)
 
@@ -104,6 +128,21 @@ for directory in allrefs.keys():
 info += '  </table>\n'
 
 
+cite += """
+
+  \end{tabularx}
+\end{table}
+
+
+% Disable colours again
+\\rowcolors{2}{white}{white}
+\\normalsize
+"""
+
 readme = open('README.md','w')
 readme.write(info)
+readme.close()
+
+readme = open('supp-model-list.tex','w')
+readme.write(cite)
 readme.close()
