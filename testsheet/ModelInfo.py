@@ -41,32 +41,27 @@ allrefs['VervaekeEtAl-GolgiCellNetwork'] = {'category':'Cerebellum','name': 'Ver
 allrefs['mbezaire/ca1'] = {'category':'Hippocampus','name': 'Bezaire et al. (2016)', 'desc':'Full scale network model of CA1 region of hippocampus', 'cite':'Bezaire2016'}
 allrefs['FergusonEtAl2013-PVFastFiringCell'] = {'category':'Hippocampus','name': 'Ferguson et al. (2013)', 'desc':'Parvalbumin-positive interneuron from CA1, based on Izhikevich cell model', 'cite':'Ferguson2013'}
 allrefs['FergusonEtAl2014-CA1PyrCell'] = {'category':'Hippocampus','name': 'Ferguson et al. (2014)', 'desc':'Pyramidal cell from CA1, based on Izhikevich cell model', 'cite':'Ferguson2014'}
-allrefs['CA1PyramidalCell'] = {'category':'Hippocampus','name': 'Migliore et al. (2005)', 'desc':'Multicompartmental model of pyramidal cell from CA1 region of hippocampus', 'cite':'XXX'}
-allrefs['PinskyRinzelModel'] = {'category':'Hippocampus','name': 'Pinsky and Rinzel (1994)', 'desc':'Simplified model of CA3 pyramidal cell', 'cite':'XXX'}
-allrefs['WangBuzsaki1996'] = {'category':'Hippocampus','name': 'Wang and Buzsaki (1996)', 'desc':'Hippocampal interneuronal network model exhibiting gamma oscillations', 'cite':'XXX'}
+allrefs['CA1PyramidalCell'] = {'category':'Hippocampus','name': 'Migliore et al. (2005)', 'desc':'Multicompartmental model of pyramidal cell from CA1 region of hippocampus', 'cite':'Migliore2005'}
+allrefs['PinskyRinzelModel'] = {'category':'Hippocampus','name': 'Pinsky and Rinzel (1994)', 'desc':'Simplified model of CA3 pyramidal cell', 'cite':'Pinsky1994'}
+allrefs['WangBuzsaki1996'] = {'category':'Hippocampus','name': 'Wang and Buzsaki (1996)', 'desc':'Hippocampal interneuronal network model exhibiting gamma oscillations', 'cite':'WangBuzsaki1996'}
 
 
-allrefs['MiglioreEtAl14_OlfactoryBulb3D'] = {'category':'Olfactory bulb','name':'Migliore et al. (2014)', 'desc': 'Large scale 3D olfactory bulb network with detailed mitral cells and granule cells', 'cite':'XXX'}
+allrefs['MiglioreEtAl14_OlfactoryBulb3D'] = {'category':'Olfactory bulb','name':'Migliore et al. (2014)', 'desc': 'Large scale 3D olfactory bulb network with detailed mitral cells and granule cells', 'cite':'Migliore2014'}
+
+allrefs['openworm/hodgkin_huxley_tutorial'] = {'category':'Invertebrate','name': 'Hodgkin and Huxley (1952)' , 'desc': 'Classic investigation of the ionic basis of the action potential', 'cite':'Hodgkin1952'}
+allrefs['FitzHugh-Nagumo'] = {'category':'Invertebrate','name': 'FitzHugh (1961)' , 'desc': 'Simplified form of Hodgkin Huxley model', 'cite':'FitzHugh1961'}
+allrefs['PyloricNetwork'] = {'category':'Invertebrate','name': 'Prinz et al. (2004)' , 'desc': 'Pyloric network of the lobster stomatogastric ganglion system', 'cite':'Prinz2004'}
+allrefs['openworm/muscle_model'] = {'category':'Invertebrate','name': 'Boyle and Cohen (2008)' , 'desc': 'Model of body wall muscle from C. elegans', 'cite':'Boyle2008'}
+allrefs['openworm/c302'] = {'category':'Invertebrate','name': 'Gleeson et al. (2018)' , 'desc': 'A multiscale framework for modelling the nervous system of C. elegans', 'cite':'Gleeson2018'}
 
 
-allrefs['openworm/hodgkin_huxley_tutorial'] = {'category':'Invertebrate','name': 'Hodgkin and Huxley (1952)' , 'desc': 'Classic investigation of the ionic basis of the action potential', 'cite':'XXX'}
-allrefs['FitzHugh-Nagumo'] = {'category':'Invertebrate','name': 'FitzHugh (1961)' , 'desc': 'Simplified form of Hodgkin Huxley model', 'cite':'XXX'}
-allrefs['PyloricNetwork'] = {'category':'Invertebrate','name': 'Prinz et al. (2004)' , 'desc': 'Pyloric network of the lobster stomatogastric ganglion system', 'cite':'XXX'}
-allrefs['openworm/muscle_model'] = {'category':'Invertebrate','name': 'Boyle and Cohen (2008)' , 'desc': 'Model of body wall muscle from C. elegans', 'cite':'XXX'}
-allrefs['openworm/c302'] = {'category':'Invertebrate','name': 'Gleeson et al. (2018)' , 'desc': 'A multiscale framework for modelling the nervous system of C. elegans', 'cite':'XXX'}
-
-
-
-
-allrefs['MorrisLecarModel'] = {'category':'General','name':'Morris and Lecar (1981)', 'desc': 'Two dimensional reduced neuron model with calcium and potassium conductances', 'cite':'XXX'}
-allrefs['HindmarshRose1984'] = {'category':'General','name':'Hindmarsh and Rose (1984)', 'desc': 'A simplified point cell model which captures complex firing patterns of single neurons, such as periodic and chaotic bursting', 'cite':'XXX'}
+allrefs['MorrisLecarModel'] = {'category':'General','name':'Morris and Lecar (1981)', 'desc': 'Two dimensional reduced neuron model with calcium and potassium conductances', 'cite':'Morris1981'}
+allrefs['HindmarshRose1984'] = {'category':'General','name':'Hindmarsh and Rose (1984)', 'desc': 'A simplified point cell model which captures complex firing patterns of single neurons, such as periodic and chaotic bursting', 'cite':'HindmarshRose1984'}
 
 allrefs['ghk-nernst'] = 'ghk-nernst'
 
 
 
-
-allrefs['MouseLightShowcase'] = {'category':'Showcases','name':'Janelia MouseLight', 'desc':'Janelia MouseLight project neuronal reconstructions'}
 allrefs['NESTShowcase'] = {'category':'Showcases','name':'NEST Showcase', 'desc':'Examples of interactions with simulator NEST'}
 allrefs['PyNNShowcase'] = {'category':'Showcases','name':'PyNN Showcase', 'desc':'Examples of interactions between PyNN and NeuroML'}
 allrefs['NetPyNEShowcase'] = {'category':'Showcases','name':'NetPyNE Showcase', 'desc':'Examples of interactions between NeuroML and NetPyNE'}
@@ -84,6 +79,7 @@ allrefs['neuroConstructShowcase'] = {'category':'Showcases','name':'neuroConstru
 
 allrefs['NeuroMorpho'] = {'category':'Showcases','name':'NeuroMorpho.Org', 'desc':'Examples of reconstructions from NeuroMorpho.Org'}
 
+allrefs['MouseLightShowcase'] = {'category':'Showcases','name':'Janelia MouseLight', 'desc':'Janelia MouseLight project neuronal reconstructions'}
 allrefs['NSGPortalShowcase'] = {'category':'Showcases','name':'NSGPortalShowcase', 'desc':'Interactions with Neuroscience Gateway'}
 workflows['NSGPortalShowcase'] = []
 

@@ -63,8 +63,8 @@ for category in categories:
 
             gh = 'OpenSourceBrain/%s'%directory if not '/' in directory else directory
 
-
-            cite += "     %s & %s & \href{https://github.com/%s}{URL}\\\\ \n"%('\cite{%s}'%allinfo['cite'] if 'cite' in allinfo else name, desc, gh)
+            if not 'NSG' in name:
+                cite += "     %s & %s & \href{https://github.com/%s}{URL}\\\\ \n"%('\cite{%s}'%allinfo['cite'] if 'cite' in allinfo else name, desc, gh)
 
 
             info += ' | <a href="https://github.com/%s">%s</a><br/><i><sup>%s</sup></i> |'%(gh,name, desc)
