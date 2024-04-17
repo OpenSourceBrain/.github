@@ -5,9 +5,9 @@ on:
   schedule:
     - cron: "1 1 1 */2 *"
   push:
-    branches: [ master, development, experimental ]
+    branches: [ main, development, experimental ]
   pull_request:
-    branches: [ master, development, experimental ]
+    branches: [ main, development, experimental ]
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: [ 3.8, "3.10" ]
+        python-version: [ 3.9, "3.11" ]
         engine: [ NetPyNE, jNeuroML, jNeuroML_NEURON, jNeuroML_NetPyNE, jNeuroML_validate ]
 
     steps:
@@ -30,7 +30,6 @@ jobs:
     - name: Install OMV
       run: |
         pip install git+https://github.com/OpenSourceBrain/osb-model-validation
-        pip install scipy sympy matplotlib cython pandas tables
         
     - name: Run OMV tests on engine ${{ matrix.engine }}
       run: |
